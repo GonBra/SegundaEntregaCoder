@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JS -->
     <script defer src="../js/carrito.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Carrito de Compras</title>
 </head>
 <body>
-    <h1>CARRITO</h1>
-
-    <section id="cart-section">
-
-    </section>
+    <header>
+        <h1>CARRITO</h1>
+    </header>
+    <div class="carrito">
+        <section id="cart-section"></section>
+        <p id="mensaje-carrito-vacio" style="display: none;">Tu carrito está vacío.</p>
+        <button id="vaciarCarrito" class="btn btn-danger" style="display: none;">Vaciar Carrito</button>
+        
+        <h3>Total: $<span id="precio-total">0</span></h3>
+    </div>
 
     <h2><a href="../index.html">Volver a los Productos</a></h2>
 </body>
