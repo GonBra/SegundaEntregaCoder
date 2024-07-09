@@ -2,6 +2,20 @@
     padding: 0%;
     margin: 0%;
 }
+#products-container{
+    padding: 20px;
+}
+.card{
+    background-color: #ABB091;
+}
+main h1{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px black solid;
+}
 header nav {
     background-color: #74814D;
     color: #74814D;
@@ -16,7 +30,7 @@ header h1{
     justify-content: center;
 }
 .card-img {
-    width: 70%;
+    width: 100%;
     height: 100%;
     justify-content: center;
     display: flex;
@@ -25,10 +39,7 @@ header h1{
 body{
     background-color: #74814D;
 }
-.carrito{
-    background-color: lightblue;
-    border: 1px black solid;
-}
+
 #navbarid {
     transition:1s;
 }
@@ -39,4 +50,17 @@ body{
     scale: 90%;
     opacity: 0.8;
     transition: 1s;
+}
+.wpp {
+    position: fixed;
+    right: 25px;
+    bottom: 35px;
+    transition: 1s;
+}
+.wpp:hover {
+    transform: rotate(360deg);
+}
+.card-in-carrito{
+    width: 30%;
+    margin-left: 20px;
 }
