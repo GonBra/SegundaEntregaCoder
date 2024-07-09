@@ -61,7 +61,7 @@ function deleteToCardButton() {
                 }
 
                 localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-                renderCarrito(cartProducts); // Re-renderizar el carrito
+                renderCarrito(cartProducts);
             }
         }
     });
@@ -76,3 +76,13 @@ function vaciarCarrito() {
 vaciarCarritoButton.onclick = vaciarCarrito;
 
 renderCarrito(cartProducts);
+
+let scrollevent = document.getElementById("navbarid")
+window.addEventListener('scroll', respuestaScroll)
+function respuestaScroll(){
+    if (window.scrollY > 0) {
+        scrollevent.classList.add("navbar-personality")
+    } else {
+        scrollevent.classList.remove("navbar-personality")
+    }
+}

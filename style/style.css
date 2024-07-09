@@ -1,12 +1,16 @@
-header{
-    background-color: #F1642D;
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header nav {
+    background-color: #74814D;
+    color: #74814D;
 }
 header div img {
-    width: 200px;
+    width: 60px;
+    justify-content: center;
     margin-bottom: 10px;
-    display: flex;
-    border-radius: 10%;
-  }
+}
 header h1{
     display: flex;
     justify-content: center;
@@ -19,9 +23,20 @@ header h1{
     text-align: center;
 }
 body{
-    background-color: aqua;
+    background-color: #74814D;
 }
 .carrito{
     background-color: lightblue;
     border: 1px black solid;
+}
+#navbarid {
+    transition:1s;
+}
+.navbar-personality{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    scale: 90%;
+    opacity: 0.8;
+    transition: 1s;
 }
